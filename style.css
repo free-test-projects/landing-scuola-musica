@@ -1,0 +1,257 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #16233f;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.row {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.3px; }
+
+.topbar {
+  border-bottom: 1px solid #e6e9ef;
+  padding: 18px 0;
+  background: #fff;
+}
+
+.topbar .row { display: flex; align-items: center; gap: 28px; }
+
+.brand { font-size: 17px; margin-right: auto; }
+.brand b { color: #2f6bff; }
+
+.topbar a {
+  color: #4b5772;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topbar a:hover { color: #16233f; }
+
+.opening { padding: 92px 0 84px 0; }
+
+.occhiello {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #2f6bff;
+  margin: 0 0 18px 0;
+}
+
+.opening h1 {
+  font-size: 50px;
+  line-height: 1.12;
+  margin: 0 0 22px 0;
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 1.65;
+  color: #4b5772;
+  max-width: 620px;
+  margin: 0 0 32px 0;
+}
+
+.azioni { display: flex; gap: 12px; }
+
+.primary {
+  background: #2f6bff;
+  color: #fff;
+  border: 0;
+  padding: 14px 24px;
+  border-radius: 2px;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.primary:hover { background: #1d4fd0; }
+
+.secondary {
+  border: 1px solid #c9d1e0;
+  color: #16233f;
+  padding: 14px 24px;
+  border-radius: 2px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.secondary:hover { border-color: #16233f; }
+
+section { padding: 76px 0; }
+
+section h2 { font-size: 30px; margin: 0 0 34px 0; }
+
+.fascia { background: #f7f8fb; }
+
+.lista-strumenti {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 46px;
+}
+
+.strumento {
+  display: flex;
+  gap: 18px;
+  padding: 26px 0;
+  border-top: 1px solid #e6e9ef;
+}
+
+.iniziale {
+  width: 46px;
+  height: 46px;
+  border: 1px solid #2f6bff;
+  color: #2f6bff;
+  border-radius: 23px;
+  text-align: center;
+  line-height: 44px;
+  font-size: 18px;
+  flex: 0 0 46px;
+}
+
+.strumento h3 { font-size: 18px; margin: 0 0 5px 0; }
+
+.strumento p {
+  margin: 0 0 7px 0;
+  font-size: 15px;
+  color: #4b5772;
+  line-height: 1.55;
+}
+
+.meta { font-size: 13px; color: #8791a6; }
+
+.numeri { display: flex; justify-content: space-between; text-align: center; }
+
+.numeri div { flex: 1; }
+
+.conta {
+  display: block;
+  font-size: 42px;
+  color: #2f6bff;
+  font-weight: 600;
+}
+
+.numeri span { font-size: 14px; color: #4b5772; }
+
+.griglia-insegnanti {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+}
+
+.scheda { text-align: center; }
+
+.quadro {
+  width: 100%;
+  padding-top: 100%;
+  margin-bottom: 12px;
+  border-radius: 2px;
+}
+
+.q1 { background: #2f6bff; }
+.q2 { background: #16233f; }
+.q3 { background: #6f8fd6; }
+.q4 { background: #3d4a66; }
+.q5 { background: #8fa6d9; }
+.q6 { background: #23315c; }
+
+.scheda h4 { margin: 0 0 2px 0; font-size: 15px; }
+.scheda p { margin: 0; font-size: 13px; color: #8791a6; }
+
+#giostra { min-height: 150px; }
+
+.voce { display: none; }
+.voce.attiva { display: block; }
+
+.voce p {
+  font-size: 23px;
+  line-height: 1.5;
+  color: #16233f;
+  margin: 0 0 16px 0;
+  max-width: 760px;
+}
+
+.voce span { font-size: 14px; color: #8791a6; }
+
+.pallini { margin-top: 26px; }
+
+.pallino {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 5px;
+  background: #c9d1e0;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.pallino.on { background: #2f6bff; }
+
+.info-doppia {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 56px;
+}
+
+#richiesta label {
+  display: block;
+  font-size: 13px;
+  color: #4b5772;
+  margin: 16px 0 6px 0;
+}
+
+#richiesta input, #richiesta select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c9d1e0;
+  border-radius: 2px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #16233f;
+}
+
+#richiesta button { margin-top: 24px; }
+
+#risposta { font-size: 15px; color: #2f6bff; min-height: 20px; }
+
+.riquadro-info {
+  background: #f7f8fb;
+  padding: 30px;
+  border-radius: 2px;
+}
+
+.riquadro-info h3 { font-size: 15px; margin: 0 0 6px 0; }
+.riquadro-info h3 + p { margin-top: 0; }
+
+.riquadro-info p {
+  font-size: 15px;
+  color: #4b5772;
+  line-height: 1.65;
+  margin-bottom: 22px;
+}
+
+footer {
+  border-top: 1px solid #e6e9ef;
+  padding: 26px 0;
+  font-size: 14px;
+  color: #8791a6;
+}
+
+footer .row { display: flex; justify-content: space-between; }
+footer a { color: #8791a6; }
+
+@media (max-width: 820px) {
+  .lista-strumenti { grid-template-columns: 1fr; }
+  .griglia-insegnanti { grid-template-columns: repeat(3, 1fr); }
+  .info-doppia { grid-template-columns: 1fr; }
+  .opening h1 { font-size: 34px; }
+}
